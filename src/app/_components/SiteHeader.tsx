@@ -11,9 +11,12 @@ const navItems = [
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line/60 bg-background/80 backdrop-blur">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-accent/70 via-accent-2/50 to-transparent" />
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
         <Link href="/" className="flex items-center gap-3">
-          <span className="h-10 w-10 rounded-full bg-accent/15" />
+          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-line bg-white/80 text-xs font-semibold text-foreground">
+            IA
+          </span>
           <span className="text-lg font-semibold tracking-tight text-foreground">
             Investimenti Intelligenti
           </span>
@@ -23,7 +26,7 @@ export default function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="transition-colors hover:text-foreground"
+              className="nav-link"
             >
               {item.label}
             </Link>

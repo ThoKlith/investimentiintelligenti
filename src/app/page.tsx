@@ -24,6 +24,31 @@ export default function Home() {
                 Scopri il metodo
               </a>
             </div>
+            <div className="flex flex-wrap gap-3">
+              <span className="chip">CFP(R)</span>
+              <span className="chip">Render Finanziario</span>
+              <span className="chip">Pianificazione</span>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              <div className="stat-card">
+                <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                  Focus
+                </p>
+                <p className="mt-2 text-lg font-semibold">Strategia chiara</p>
+              </div>
+              <div className="stat-card">
+                <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                  Metodo
+                </p>
+                <p className="mt-2 text-lg font-semibold">4 fasi guidate</p>
+              </div>
+              <div className="stat-card">
+                <p className="text-xs uppercase tracking-[0.3em] text-muted">
+                  Supporto
+                </p>
+                <p className="mt-2 text-lg font-semibold">Monitoraggio</p>
+              </div>
+            </div>
           </div>
           <div className="space-y-6">
             <div className="glass-panel animate-float">
@@ -52,7 +77,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="metodo" className="section bg-surface-muted">
+      <section id="metodo" className="section bg-surface-muted surface-grid">
         <div className="mx-auto w-full max-w-6xl px-6">
           <div className="grid gap-10 lg:grid-cols-[1.1fr_1fr]">
             <div className="space-y-4">
@@ -64,9 +89,10 @@ export default function Home() {
                 Insieme trasformiamo la pianificazione in liberta attraverso un
                 percorso strutturato e misurabile.
               </p>
+              <div className="divider-line mt-6" />
             </div>
             <div className="grid gap-6">
-              <div className="card">
+              <div className="card card-step">
                 <p className="text-xs uppercase tracking-[0.3em] text-muted">
                   Fase 1
                 </p>
@@ -77,7 +103,7 @@ export default function Home() {
                   tuoi sogni.
                 </p>
               </div>
-              <div className="card">
+              <div className="card card-step">
                 <p className="text-xs uppercase tracking-[0.3em] text-muted">
                   Fase 2
                 </p>
@@ -89,7 +115,7 @@ export default function Home() {
                   tuo futuro finanziario in modo continuativo.
                 </p>
               </div>
-              <div className="card">
+              <div className="card card-step">
                 <p className="text-xs uppercase tracking-[0.3em] text-muted">
                   Fase 3
                 </p>
@@ -101,7 +127,7 @@ export default function Home() {
                   finanziari.
                 </p>
               </div>
-              <div className="card">
+              <div className="card card-step">
                 <p className="text-xs uppercase tracking-[0.3em] text-muted">
                   Fase 4
                 </p>
