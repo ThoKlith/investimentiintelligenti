@@ -9,23 +9,29 @@ export default function SiteFooter() {
             Investimenti Intelligenti
           </p>
           <p className="text-sm text-muted">
-            Strategie chiare e controllate per investire con metodo, tutelare il
-            capitale e crescere nel tempo.
+            Strada vecchia di san giovanni 129, 10062 Luserna San Giovanni (TO)
           </p>
-          <p className="text-xs text-muted">Placeholder: sostituisci con i dati reali.</p>
+          <p className="text-sm text-muted">Email: segreteria@investimentiamine.it</p>
+          <p className="text-sm text-muted">Pec: aminealahiyane@pec.it</p>
         </div>
         <div className="space-y-3 text-sm text-muted">
           <p className="text-xs uppercase tracking-[0.2em] text-foreground">
             Pagine
           </p>
           <Link href="/chi-siamo" className="block hover:text-foreground">
-            Chi siamo
+            Chi Sono?
           </Link>
-          <Link href="/servizi" className="block hover:text-foreground">
-            Servizi
+          <Link
+            href="/educazione-finanziaria"
+            className="block hover:text-foreground"
+          >
+            Educazione Finanziaria
           </Link>
-          <Link href="/blog" className="block hover:text-foreground">
-            Blog
+          <Link
+            href="/domande-frequenti"
+            className="block hover:text-foreground"
+          >
+            Domande Frequenti
           </Link>
           <Link href="/contatti" className="block hover:text-foreground">
             Contatti
@@ -35,13 +41,12 @@ export default function SiteFooter() {
           <p className="text-xs uppercase tracking-[0.2em] text-foreground">
             Contatti
           </p>
-          <p>Milano, Italia</p>
-          <p>info@investimentiintelligenti.it</p>
-          <p>+39 02 0000 0000</p>
+          <p>+39 351 897 1482</p>
+          <p>P. IVA 12679780010</p>
         </div>
       </div>
       <div className="border-t border-line/60 py-6 text-center text-xs text-muted">
-        (c) 2026 Investimenti Intelligenti. Tutti i diritti riservati.
+        Copyright (c) 2023 Amine Alahiyane
       </div>
     </footer>
   );

@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Chi siamo", href: "/chi-siamo" },
-  { label: "Servizi", href: "/servizi" },
-  { label: "Blog", href: "/blog" },
+  { label: "Chi Sono?", href: "/chi-siamo" },
+  { label: "Educazione Finanziaria", href: "/educazione-finanziaria" },
+  { label: "Domande Frequenti", href: "/domande-frequenti" },
   { label: "Contatti", href: "/contatti" },
 ];
 
