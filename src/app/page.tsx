@@ -1,63 +1,9 @@
-"use client";
-
 import Image from "next/image";
-import { AlignLeft, PenLine, Wallet, Eye, Star, Mail, Phone, MapPin, Menu, X, Quote } from "lucide-react";
-import { useState, useEffect } from "react";
+import { AlignLeft, PenLine, Wallet, Eye, Star, Quote } from "lucide-react";
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div className="flex flex-col min-h-screen bg-white text-foreground selection:bg-accent/20">
-      {/* Navbar */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
-        <div className="flex items-center justify-between px-6 lg:px-20 mx-auto max-w-7xl w-full">
-          <div className="font-bold text-accent text-xl leading-tight z-10">
-            Amine<br />Bouzan
-          </div>
-          
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex flex-1 items-center justify-center gap-8 text-sm font-semibold text-accent z-10 pl-8">
-            <a href="#" className="hover:text-blue-600 transition-colors">Home</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Chi Sono</a>
-            <a href="#metodo" className="hover:text-blue-600 transition-colors">Il mio Metodo</a>
-            <a href="#" className="hover:text-blue-600 transition-colors">Domande Frequenti</a>
-          </div>
-
-          <div className="hidden lg:block z-10">
-            <a href="#" className="px-8 py-3.5 bg-accent text-white rounded-full hover:bg-blue-800 transition-colors text-sm font-semibold shadow-lg">Prenota Appuntamento</a>
-          </div>
-
-          {/* Mobile Menu Toggle */}
-          <button 
-            className="lg:hidden text-accent p-2 z-10"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle Menu"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Nav Overlay */}
-        {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl flex flex-col items-center py-6 gap-6 font-semibold text-accent border-t border-gray-100">
-            <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Home</a>
-            <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Chi Sono</a>
-            <a href="#metodo" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Il mio Metodo</a>
-            <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Domande Frequenti</a>
-            <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="px-6 py-2 bg-accent text-white rounded-full hover:bg-blue-800 transition-colors mt-2">Prenota Appuntamento</a>
-          </div>
-        )}
-      </nav>
 
       {/* Hero Section */}
       <section className="relative px-6 lg:px-20 pt-32 lg:pt-40 pb-0 max-w-7xl mx-auto w-full grid lg:grid-cols-2 items-end gap-10">
@@ -239,64 +185,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-accent text-white py-16 lg:py-20 px-6">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20">
-          <div className="space-y-8">
-            <div className="flex items-center gap-5">
-              <div className="bg-white/10 p-3 rounded-full">
-                <Mail className="text-blue-400" size={20} />
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-blue-200/80 mb-1">Email</p>
-                <p className="font-semibold text-lg">segreteria@investimentiamine.it</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-5">
-              <div className="bg-white/10 p-3 rounded-full">
-                <Phone className="text-blue-400" size={20} />
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-blue-200/80 mb-1">Numero</p>
-                <p className="font-semibold text-lg">+39 351 897 1482</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-5">
-              <div className="bg-white/10 p-3 rounded-full">
-                <MapPin className="text-blue-400" size={20} />
-              </div>
-              <div>
-                <p className="text-xs uppercase tracking-widest text-blue-200/80 mb-1">Posizione</p>
-                <p className="font-semibold text-lg">via Clemente Lequio 76, Pinerolo TO</p>
-              </div>
-            </div>
-          </div>
-          <div className="space-y-6 text-sm text-blue-100/80 lg:border-l lg:border-white/10 lg:pl-12 pt-8 lg:pt-0 border-t border-white/10 lg:border-t-0">
-            <p className="uppercase tracking-widest text-xs font-bold text-white mb-6">Albo e Iscrizioni</p>
-            <p className="leading-relaxed">Consulente finanziario abilitato all'offerta fuori sede iscritto all'albo OCF con delibera N. 1873 del 24/03/2022.</p>
-            <p className="leading-relaxed">Subagente assicurativo iscritto all'albo RUI sezione E con N.E000712221.</p>
-            <div className="flex gap-4 items-center mt-8">
-              <div className="bg-white/10 border border-white/20 text-white px-5 py-2 rounded font-bold text-lg tracking-wider">OCF</div>
-              <div className="bg-white/10 border border-white/20 text-white px-5 py-2 rounded font-bold text-lg tracking-wider">IVASS</div>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-6xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-blue-200/60">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-            <a href="#" className="hover:text-white transition-colors">Home</a>
-            <a href="#" className="hover:text-white transition-colors">Chi Sono</a>
-            <a href="#" className="hover:text-white transition-colors">Domande Frequenti</a>
-            <a href="#" className="hover:text-white transition-colors">Prenota Appuntamento</a>
-          </div>
-          <div className="flex gap-8">
-            <a href="#" className="hover:text-white transition-colors">Cookie Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-          </div>
-        </div>
-        <div className="text-center mt-12 text-[10px] sm:text-xs text-blue-200/40 tracking-wider">
-          DOCUMENTO DI MARKETING CON FINALITÀ PROMOZIONALI, REDATTO DA AMINE BOUZAN DA CONSIDERARSI COME COMUNICAZIONE COMMERCIALE.
-        </div>
-      </footer>
     </div>
   );
 }

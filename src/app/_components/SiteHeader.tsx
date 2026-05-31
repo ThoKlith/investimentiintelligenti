@@ -1,46 +1,60 @@
+"use client";
+
+import { Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
-const navItems = [
-  { label: "Home", href: "/" },
-  { label: "Chi Sono?", href: "/chi-siamo" },
-  { label: "Educazione Finanziaria", href: "/educazione-finanziaria" },
-  { label: "Domande Frequenti", href: "/domande-frequenti" },
-  { label: "Contatti", href: "/contatti" },
-];
-
 export default function SiteHeader() {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 border-b border-line/60 bg-background/80 backdrop-blur">
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-accent/70 via-accent-2/50 to-transparent" />
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl border border-line bg-white/80 text-xs font-semibold text-foreground">
-            IA
-          </span>
-          <span className="text-lg font-semibold tracking-tight text-foreground">
-            Investimenti Intelligenti
-          </span>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
+      <div className="flex items-center justify-between px-6 lg:px-20 mx-auto max-w-7xl w-full">
+        <Link href="/" className="font-bold text-accent text-xl leading-tight z-10">
+          Amine<br />Bouzan
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium text-muted md:flex">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="nav-link"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-        <div className="flex items-center gap-3">
-          <Link href="/contatti" className="btn-secondary hidden sm:inline-flex">
-            Contattaci
-          </Link>
-          <Link href="/contatti" className="btn-primary">
-            Prenota una call
-          </Link>
+        
+        {/* Desktop Nav */}
+        <div className="hidden lg:flex flex-1 items-center justify-center gap-8 text-sm font-semibold text-accent z-10 pl-8">
+          <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
+          <Link href="/chi-siamo" className="hover:text-blue-600 transition-colors">Chi Sono</Link>
+          <Link href="/#metodo" className="hover:text-blue-600 transition-colors">Il mio Metodo</Link>
+          <Link href="/#faq" className="hover:text-blue-600 transition-colors">Domande Frequenti</Link>
         </div>
+
+        <div className="hidden lg:block z-10">
+          <Link href="/contatti" className="px-8 py-3.5 bg-accent text-white rounded-full hover:bg-blue-800 transition-colors text-sm font-semibold shadow-lg">Prenota Appuntamento</Link>
+        </div>
+
+        {/* Mobile Menu Toggle */}
+        <button 
+          className="lg:hidden text-accent p-2 z-10"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle Menu"
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
-    </header>
+
+      {/* Mobile Nav Overlay */}
+      {isMobileMenuOpen && (
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-xl flex flex-col items-center py-6 gap-6 font-semibold text-accent border-t border-gray-100">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Home</Link>
+          <Link href="/chi-siamo" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Chi Sono</Link>
+          <Link href="/#metodo" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Il mio Metodo</Link>
+          <Link href="/#faq" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-blue-600 transition-colors">Domande Frequenti</Link>
+          <Link href="/contatti" onClick={() => setIsMobileMenuOpen(false)} className="px-6 py-2 bg-accent text-white rounded-full hover:bg-blue-800 transition-colors mt-2">Prenota Appuntamento</Link>
+        </div>
+      )}
+    </nav>
   );
 }
