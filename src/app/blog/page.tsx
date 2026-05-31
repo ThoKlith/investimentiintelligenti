@@ -18,19 +18,19 @@ export const posts = [
     excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
   },
   {
-    title: "Perche gli obiettivi cambiano il portafoglio",
-    date: "22 Apr 2026",
-    tag: "Metodo",
-    slug: "obiettivi-portafoglio",
-    excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
+    title: "Come mettere ordine nel patrimonio familiare (e perché non puoi più rimandarlo)",
+    date: "18 Ago 2026",
+    tag: "Pianificazione",
+    slug: "ordine-patrimonio-familiare",
+    excerpt: "Conti correnti che si confondono, polizze dimenticate in un cassetto, una casa che pesa sul bilancio e qualche fondo che non sai più cosa contenga. Un patrimonio familiare disordinato non è un problema estetico: è un costo silenzioso."
   },
   {
-    title: "Liquidita: quanto tenere e perche",
-    date: "12 Apr 2026",
-    tag: "Pianificazione",
-    slug: "liquidita-quanto-tenere",
-    excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
-  },
+    title: "Cos'è la progettazione finanziaria: parto dalla vita, non dai prodotti",
+    date: "Maggio 2026",
+    tag: "Metodo",
+    slug: "cos-e-la-progettazione-finanziaria",
+    excerpt: "Perché la pianificazione finanziaria personalizzata non parte dal portafoglio, ma dalla persona — e perché questo cambia tutto."
+  }
 ];
 
 export default function BlogPage() {
