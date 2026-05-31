@@ -32,10 +32,17 @@ export default function Home() {
             />
           </div>
         </div>
+        
+        {/* Wave Divider to Dark Blue Metodo */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none translate-y-[1px]">
+          <svg viewBox="0 0 1440 120" className="w-full h-[40px] md:h-[70px] lg:h-[100px] block" preserveAspectRatio="none">
+            <path fill="#000435" d="M0,60 C400,120 1040,0 1440,60 L1440,120 L0,120 Z"></path>
+          </svg>
+        </div>
       </section>
 
       {/* Metodo Section - Clean Professional Straight Separator */}
-      <div className="relative bg-accent z-20 border-t-8 border-blue-100">
+      <div className="relative bg-accent z-20">
         <section id="metodo" className="text-white py-20 lg:py-28 px-6 relative z-10">
           <div className="max-w-6xl mx-auto text-center mb-16 lg:mb-24">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">IL MIO METODO DI LAVORO</h2>
@@ -80,10 +87,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Wave to Image Background (Bottom of dark blue section) */}
-        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-[99%] z-20 pointer-events-none">
-          <svg viewBox="0 0 1440 320" className="w-full h-[60px] md:h-[120px] lg:h-[180px] block drop-shadow-lg" preserveAspectRatio="none">
-            <path fill="#ffffff" fillOpacity="0.8" d="M0,96L80,117.3C160,139,320,181,480,170.7C640,160,800,96,960,101.3C1120,107,1280,181,1360,218.7L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        {/* Wave Divider to Valori */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none translate-y-[1px]">
+          <svg viewBox="0 0 1440 120" className="w-full h-[40px] md:h-[70px] lg:h-[100px] block" preserveAspectRatio="none">
+            <path fill="#ffffff" d="M0,60 C400,120 1040,0 1440,60 L1440,120 L0,120 Z"></path>
           </svg>
         </div>
       </div>
@@ -131,16 +138,17 @@ export default function Home() {
         <button className="btn-primary relative z-10 px-14 py-4 text-lg shadow-[0_10px_30px_rgba(0,68,255,0.4)] hover:shadow-[0_15px_40px_rgba(0,68,255,0.6)] hover:-translate-y-1">
           Chi Sono
         </button>
+
+        {/* Wave Divider to Mission */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-20 pointer-events-none translate-y-[1px]">
+          <svg viewBox="0 0 1440 120" className="w-full h-[40px] md:h-[70px] lg:h-[100px] block" preserveAspectRatio="none">
+            <path fill="#000435" d="M0,60 C400,120 1040,0 1440,60 L1440,120 L0,120 Z"></path>
+          </svg>
+        </div>
       </section>
 
       {/* Mission Section in Dark Blue */}
       <div className="relative bg-accent">
-        {/* Top Wave transition into this section */}
-        <div className="absolute top-0 left-0 w-full overflow-hidden leading-none transform -translate-y-full pointer-events-none">
-          <svg viewBox="0 0 1440 320" className="w-full h-[60px] md:h-[120px] lg:h-[180px] block" preserveAspectRatio="none">
-            <path fill="#000435" d="M0,96L80,128C160,160,320,224,480,240C640,256,800,224,960,186.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-          </svg>
-        </div>
 
         <section className="relative py-24 lg:py-32 px-6 flex justify-center z-10">
           <div className="bg-white rounded-[40px] max-w-4xl w-full p-10 lg:p-16 text-center shadow-2xl relative">
