@@ -48,7 +48,8 @@ export default function SiteFooter() {
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
           <Link href="/" className="hover:text-white transition-colors">Home</Link>
           <Link href="/chi-siamo" className="hover:text-white transition-colors">Chi Sono</Link>
-          <Link href="/#faq" className="hover:text-white transition-colors">Domande Frequenti</Link>
+          <Link href="/educazione-finanziaria" className="hover:text-white transition-colors">Educazione Finanziaria</Link>
+          <Link href="/domande-frequenti" className="hover:text-white transition-colors">Domande Frequenti</Link>
           <Link href="/contatti" className="hover:text-white transition-colors">Prenota Appuntamento</Link>
         </div>
         <div className="flex gap-8">

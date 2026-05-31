@@ -50,28 +50,60 @@ const faqs = [
   },
 ];
 
+import Image from "next/image";
+
 export default function DomandeFrequentiPage() {
   return (
-    <div>
-      <section className="section">
-        <div className="mx-auto w-full max-w-6xl px-6">
-          <p className="eyebrow">Domande Frequenti</p>
-          <h1 className="mt-4 text-4xl font-semibold md:text-5xl">
-            Qui troverai le domande che mi vengono poste di frequente.
+    <div className="flex flex-col min-h-screen bg-slate-50">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-24 lg:pt-48 lg:pb-32 flex flex-col items-center justify-center">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/hero.png" 
+            alt="FAQ Background" 
+            fill 
+            className="object-cover object-top opacity-30" 
+          />
+          <div className="absolute inset-0 bg-accent/80 mix-blend-multiply"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-accent/90 to-accent/50"></div>
+        </div>
+
+        <div className="relative z-10 text-center px-6 max-w-4xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 drop-shadow-lg">
+            Domande Frequenti
           </h1>
-          <div className="mt-10 grid gap-4">
+          <p className="text-xl lg:text-2xl text-blue-100/90 font-medium drop-shadow">
+            Qui troverai le risposte alle domande che mi vengono poste più spesso.
+          </p>
+        </div>
+
+        {/* Wave Divider to Slate 50 */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none transform translate-y-[1px] z-10 pointer-events-none">
+          <svg viewBox="0 0 1440 120" className="w-full h-[40px] md:h-[60px] lg:h-[80px] block" preserveAspectRatio="none">
+            <path fill="#f8fafc" d="M0,60 C400,120 1040,0 1440,60 L1440,120 L0,120 Z"></path>
+          </svg>
+        </div>
+      </section>
+
+      {/* FAQ Accordion Section */}
+      <section className="py-20 lg:py-28 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid gap-4">
             {faqs.map((faq, index) => (
-              <details key={faq.question} className="faq-item">
-                <summary className="flex items-center justify-between gap-4">
-                  <span className="flex items-center gap-3">
-                    <span className="faq-icon">{index + 1}</span>
+              <details key={faq.question} className="group bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <summary className="flex items-start sm:items-center justify-between gap-4 p-6 cursor-pointer hover:bg-slate-50 transition-colors font-semibold text-base sm:text-lg text-accent">
+                  <span className="flex items-start sm:items-center gap-4">
+                    <span className="flex-shrink-0 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 text-sm mt-0.5 sm:mt-0">{index + 1}</span>
                     <span>{faq.question}</span>
                   </span>
-                  <span className="text-xs uppercase tracking-[0.2em] text-muted">
-                    Apri
+                  <span className="flex-shrink-0 transition-transform duration-300 group-open:rotate-180 text-blue-500 mt-1 sm:mt-0">
+                    <svg fill="none" height="24" shapeRendering="geometricPrecision" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                   </span>
                 </summary>
-                <p className="mt-4 text-sm text-muted">{faq.answer}</p>
+                <div className="p-6 pt-2 text-accent/70 leading-relaxed text-sm sm:text-base">
+                  <p>{faq.answer}</p>
+                </div>
               </details>
             ))}
           </div>
