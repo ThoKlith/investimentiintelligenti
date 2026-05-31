@@ -1,28 +1,37 @@
-const posts = [
+import Link from "next/link";
+import Image from "next/image";
+import { ChevronRight } from "lucide-react";
+
+export const posts = [
   {
-    title: "Come leggere un report senza perdersi nei numeri",
-    date: "18 Mag 2026",
-    tag: "Educazione",
+    title: "Silenzio assenso TFR 2026: cosa cambia davvero dal 1° luglio",
+    date: "Maggio 2026",
+    tag: "Previdenza",
+    slug: "silenzio-assenso-tfr-2026",
+    excerpt: "Dal 1° luglio 2026 l'adesione alla previdenza complementare diventa la regola, la rinuncia l'eccezione. Cosa significa per i lavoratori dipendenti e perché non puoi più rimandare."
   },
   {
     title: "Ribilanciamento: quando serve davvero",
     date: "03 Mag 2026",
     tag: "Strategia",
+    slug: "ribilanciamento-quando-serve",
+    excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
   },
   {
     title: "Perche gli obiettivi cambiano il portafoglio",
     date: "22 Apr 2026",
     tag: "Metodo",
+    slug: "obiettivi-portafoglio",
+    excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
   },
   {
     title: "Liquidita: quanto tenere e perche",
     date: "12 Apr 2026",
     tag: "Pianificazione",
+    slug: "liquidita-quanto-tenere",
+    excerpt: "Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato."
   },
 ];
-
-import Image from "next/image";
-import { ChevronRight } from "lucide-react";
 
 export default function BlogPage() {
   return (
@@ -63,7 +72,7 @@ export default function BlogPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
-              <article key={post.title} className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-default">
+              <Link href={`/blog/${post.slug}`} key={post.slug} className="bg-white rounded-[2rem] p-8 shadow-sm border border-gray-100 flex flex-col hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
                 <div className="flex items-center justify-between text-xs font-bold uppercase tracking-widest text-blue-600 mb-6">
                   <span className="bg-blue-50 px-3 py-1 rounded-full">{post.tag}</span>
                   <span className="text-accent/40">{post.date}</span>
@@ -72,12 +81,12 @@ export default function BlogPage() {
                   {post.title}
                 </h2>
                 <p className="text-accent/70 leading-relaxed mb-8 flex-grow text-sm">
-                  Questo è un testo segnaposto temporaneo. Quando avrai i tuoi veri articoli, questo spazio mostrerà un breve riassunto dell'argomento trattato.
+                  {post.excerpt}
                 </p>
                 <div className="flex items-center gap-2 text-sm font-bold text-accent group-hover:text-blue-600 transition-colors mt-auto">
                   Leggi l'articolo <ChevronRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </div>
