@@ -56,6 +56,7 @@ export default function SiteFooter() {
         <div className="flex gap-8">
           <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
           <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
         </div>
       </div>
       <div className="text-center mt-12 text-[10px] sm:text-xs text-blue-200/40 tracking-wider">

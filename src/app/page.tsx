@@ -110,33 +110,33 @@ export default function Home() {
               <AlignLeft size={32} />
             </div>
             <h3 className="text-xl font-bold text-accent mb-3">Trasparenza</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">La trasparenza è alla base di un rapporto di fiducia e duraturo.</p>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Credo che la trasparenza sia alla base di un rapporto di collaborazione di fiducia e duraturo</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <PenLine size={32} />
             </div>
             <h3 className="text-xl font-bold text-accent mb-3">Personalizzazione</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ogni persona ha esigenze e obiettivi differenti.</p>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ogni persona ha esigenze ed obiettivi differenti, per questo la personalizzazione è di estrema importanza</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <Wallet size={32} />
             </div>
-            <h3 className="text-xl font-bold text-accent mb-3">Zero conflitti</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Posso scegliere ogni strumento sul mercato senza incentivi.</p>
+            <h3 className="text-xl font-bold text-accent mb-3">Zero conflitti d'interesse</h3>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ho la possibilità di poter scegliere qualsiasi strumento esistente sul mercato, per questo non sono incentivato a dover utilizzare degli strumenti specifici rispetto ad altri</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <Eye size={32} />
             </div>
-            <h3 className="text-xl font-bold text-accent mb-3">Aggiornamento</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Monitoraggio costante e competenze sempre aggiornate.</p>
+            <h3 className="text-xl font-bold text-accent mb-3">Aggiornamento continuo</h3>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Il monitoraggio della situazione dei miei clienti e l'aggiornamento delle mie competenze sta alla base di un'attività altamente consulenziale</p>
           </div>
         </div>
 
-        <button className="btn-primary relative z-10 px-14 py-4 text-lg shadow-[0_10px_30px_rgba(0,68,255,0.4)] hover:shadow-[0_15px_40px_rgba(0,68,255,0.6)] hover:-translate-y-1">
-          Chi Sono
+        <button className="btn-primary relative z-10 px-14 py-4 text-lg shadow-[0_10px_30px_rgba(0,68,255,0.4)] hover:shadow-[0_15px_40px_rgba(0,68,255,0.6)] hover:-translate-y-1 bg-blue-600 text-white rounded-full font-bold">
+          Chi Sono?
         </button>
 
         {/* Wave Divider to Mission */}
@@ -170,24 +170,24 @@ export default function Home() {
                 {[1,2,3,4,5].map(i => <Star key={i} size={18} fill="currentColor" strokeWidth={0} />)}
               </div>
               <h3 className="font-bold text-lg text-accent mb-2">Dott.ssa Lorenza T. - Professoressa</h3>
-              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Consulente preparato e affidabile. Dopo un'attenta analisi del portafoglio, prospetta soluzioni adatte e spiega con sintesi e linearità.</p>
-              <a href="#" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Read on Google &rarr;</a>
+              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Consulente preparato e affidabile. Dopo un'attenta analisi del portafoglio, prospetta soluzioni adatte e spiega con...</p>
+              <a href="https://www.google.com/search?sca_esv=3d3edac27adaa913&q=Studio+di+Consulenza+Finanziaria+-+Dott.+Amine+Alahiyane&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EyBsvUYGwu4thxx4G9BXZYqGaaL7xnFAe7UAVo-ZboqTwFXUikp2zZSqRu8011dY33Nu0r4%3D&uds=AOm0WdE9G6E6l0NV56fgnfyGXriKGPywmHQZIZGoWE2du7ZMqJpuvF0EB880GkKrucaZgL5zCcMLlPM18eOMpVp8zWfH3GdoNFhiOTK0xX-CelIiY_qGbtDCoYXfxqI7OpFIixAchuQTuu3YY_6K2Upp04DpdWNhBdonRGmP7iOYwHDBvWK7pAw&sa=X&ved=2ahUKEwj87Z2ovuyQAxXz9rsIHctmBxsQ3PALegQIRBAF&biw=1512&bih=861&dpr=2" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Continua a leggere &rarr;</a>
             </div>
             <div className="card text-left flex flex-col h-full hover:-translate-y-1 transition-transform">
               <div className="flex gap-1 text-yellow-400 mb-5">
                 {[1,2,3,4,5].map(i => <Star key={i} size={18} fill="currentColor" strokeWidth={0} />)}
               </div>
               <h3 className="font-bold text-lg text-accent mb-2">Dott. Nicolò S. - Medico Chirurgo</h3>
-              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Consiglia in modo chiaro e semplice, con strategie di diversificazione personalizzate e grande disponibilità.</p>
-              <a href="#" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Read on Google &rarr;</a>
+              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Consiglia in modo chiaro e semplice, con strategie di diversificazione personalizzate e grande disponibilità...</p>
+              <a href="https://www.google.com/search?sca_esv=3d3edac27adaa913&q=Studio+di+Consulenza+Finanziaria+-+Dott.+Amine+Alahiyane&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EyBsvUYGwu4thxx4G9BXZYqGaaL7xnFAe7UAVo-ZboqTwFXUikp2zZSqRu8011dY33Nu0r4%3D&uds=AOm0WdE9G6E6l0NV56fgnfyGXriKGPywmHQZIZGoWE2du7ZMqJpuvF0EB880GkKrucaZgL5zCcMLlPM18eOMpVp8zWfH3GdoNFhiOTK0xX-CelIiY_qGbtDCoYXfxqI7OpFIixAchuQTuu3YY_6K2Upp04DpdWNhBdonRGmP7iOYwHDBvWK7pAw&sa=X&ved=2ahUKEwj87Z2ovuyQAxXz9rsIHctmBxsQ3PALegQIRBAF&biw=1512&bih=861&dpr=2" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Continua a leggere &rarr;</a>
             </div>
             <div className="card text-left flex flex-col h-full hover:-translate-y-1 transition-transform">
               <div className="flex gap-1 text-yellow-400 mb-5">
                 {[1,2,3,4,5].map(i => <Star key={i} size={18} fill="currentColor" strokeWidth={0} />)}
               </div>
               <h3 className="font-bold text-lg text-accent mb-2">Arch. Virginia B. - Light Designer</h3>
-              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Professionale, serio e molto competente. Ti segue passo dopo passo con competenza e chiarezza.</p>
-              <a href="#" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Read on Google &rarr;</a>
+              <p className="text-sm text-accent/70 mb-6 leading-relaxed flex-grow">Professionale, serio e molto competente. Ti segue passo dopo passo con competenza e chiarezza...</p>
+              <a href="https://www.google.com/search?sca_esv=3d3edac27adaa913&q=Studio+di+Consulenza+Finanziaria+-+Dott.+Amine+Alahiyane&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EyBsvUYGwu4thxx4G9BXZYqGaaL7xnFAe7UAVo-ZboqTwFXUikp2zZSqRu8011dY33Nu0r4%3D&uds=AOm0WdE9G6E6l0NV56fgnfyGXriKGPywmHQZIZGoWE2du7ZMqJpuvF0EB880GkKrucaZgL5zCcMLlPM18eOMpVp8zWfH3GdoNFhiOTK0xX-CelIiY_qGbtDCoYXfxqI7OpFIixAchuQTuu3YY_6K2Upp04DpdWNhBdonRGmP7iOYwHDBvWK7pAw&sa=X&ved=2ahUKEwj87Z2ovuyQAxXz9rsIHctmBxsQ3PALegQIRBAF&biw=1512&bih=861&dpr=2" target="_blank" rel="noopener noreferrer" className="text-blue-600 text-sm font-semibold hover:underline inline-flex items-center gap-1 mt-auto">Continua a leggere &rarr;</a>
             </div>
           </div>
         </div>
