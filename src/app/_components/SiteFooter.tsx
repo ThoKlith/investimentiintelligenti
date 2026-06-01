@@ -38,9 +38,20 @@ export default function SiteFooter() {
           <p className="uppercase tracking-widest text-[10px] md:text-xs font-bold text-white mb-4 md:mb-6">Albo e Iscrizioni</p>
           <p className="leading-relaxed">Consulente finanziario abilitato all'offerta fuori sede iscritto all'albo OCF con delibera N. 1873 del 24/03/2022.</p>
           <p className="leading-relaxed">Subagente assicurativo iscritto all'albo RUI sezione E con N.E000712221.</p>
-          <div className="flex gap-4 items-center mt-6 md:mt-8">
-            <div className="bg-white/10 border border-white/20 text-white px-4 py-2 md:px-5 md:py-2 rounded font-bold text-base md:text-lg tracking-wider">OCF</div>
-            <div className="bg-white/10 border border-white/20 text-white px-4 py-2 md:px-5 md:py-2 rounded font-bold text-base md:text-lg tracking-wider">IVASS</div>
+          <div className="flex flex-col gap-6 mt-6 md:mt-8">
+            {/* IVASS Block */}
+            <div className="flex flex-col items-start gap-2">
+              <span className="text-[10px] md:text-xs font-bold text-white tracking-wider">iscritto all'albo n. E000712221</span>
+              <img src="/download-1.png" alt="IVASS" className="h-12 md:h-16 object-contain bg-white/90 p-2 rounded" />
+            </div>
+
+            <hr className="border-white/20 w-3/4" />
+
+            {/* OCF Block */}
+            <div className="flex flex-col items-start gap-2">
+              <span className="text-[10px] md:text-xs font-bold text-white tracking-wider">iscritto all'albo n. 1873</span>
+              <img src="/logo.png" alt="OCF" className="h-12 md:h-16 object-contain bg-white/90 p-2 rounded" />
+            </div>
           </div>
         </div>
       </div>
