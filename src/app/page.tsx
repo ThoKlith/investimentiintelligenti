@@ -47,7 +47,8 @@ export default function Home() {
           <div className="max-w-6xl mx-auto text-center mb-16 lg:mb-24">
             <h2 className="text-3xl lg:text-5xl font-bold mb-6">IL MIO METODO DI LAVORO</h2>
             <p className="max-w-3xl mx-auto text-base lg:text-lg text-blue-100/80">
-              Render Finanziario: dalla complessità alla chiarezza. Insieme trasformiamo la pianificazione in libertà attraverso un percorso strutturato e misurabile.
+              Grazie al <strong>Render Finanziario</strong>, un metodo innovativo – e unico in Italia – che ho creato ispirandomi agli standard internazionali di pianificazione finanziaria, trasformeremo la complessità finanziaria in chiarezza, e la pianificazione in libertà.<br /><br />
+              Scrivimi su Whatsapp per prenotare la prima sessione di Rendering.
             </p>
           </div>
 
@@ -57,15 +58,20 @@ export default function Home() {
               <div className="timeline-icon">1</div>
               <div className="bg-white text-accent p-6 lg:p-8 rounded-3xl shadow-xl lg:ml-8 hover:-translate-y-1 transition-transform">
                 <h3 className="text-lg lg:text-xl font-bold mb-2">Prima Consulenza</h3>
-                <p className="text-sm text-accent/80">In 1 ora realizziamo una fotografia precisa della tua situazione finanziaria e valutiamo i passi per progettare i tuoi sogni.</p>
+                <p className="text-sm text-accent/80">
+                  Nella prima consulenza di 1 ora realizzeremo una fotografia precisa e completa della tua attuale situazione finanziaria attraverso il <strong>Render Finanziario</strong> e capiremo cosa si può fare per progettare i tuoi sogni,<br /><br />
+                  Se ci sono i presupposti da entrambe le parti per intraprendere una collaborazione continuativa, ti racconterò come è strutturato il servizio di consulenza continuativa.
+                </p>
               </div>
             </div>
             {/* Step 2 */}
             <div className="timeline-item left">
               <div className="timeline-icon">2</div>
               <div className="bg-white text-accent p-6 lg:p-8 rounded-3xl shadow-xl lg:mr-8 hover:-translate-y-1 transition-transform">
-                <h3 className="text-lg lg:text-xl font-bold mb-2">Progettazione del proprio Futuro</h3>
-                <p className="text-sm text-accent/80">Se proseguiamo insieme, gettiamo le basi per progettare il tuo futuro finanziario in modo continuativo.</p>
+                <h3 className="text-lg lg:text-xl font-bold mb-2">Progettazione del proprio futuro finanziario</h3>
+                <p className="text-sm text-accent/80">
+                  In caso di proseguimento della collaborazione in modo continuativo, si getteranno le basi per progettare il proprio futuro finanziario
+                </p>
               </div>
             </div>
             {/* Step 3 */}
@@ -73,7 +79,9 @@ export default function Home() {
               <div className="timeline-icon">3</div>
               <div className="bg-white text-accent p-6 lg:p-8 rounded-3xl shadow-xl lg:ml-8 hover:-translate-y-1 transition-transform">
                 <h3 className="text-lg lg:text-xl font-bold mb-2">Implementazione del progetto</h3>
-                <p className="text-sm text-accent/80">Implementiamo ciò che serve per realizzare i tuoi progetti finanziari in totale sicurezza.</p>
+                <p className="text-sm text-accent/80">
+                  Si implementerà ciò che è necessario per i propri progetti finanziari
+                </p>
               </div>
             </div>
             {/* Step 4 */}
@@ -81,7 +89,10 @@ export default function Home() {
               <div className="timeline-icon">4</div>
               <div className="bg-white text-accent p-6 lg:p-8 rounded-3xl shadow-xl lg:mr-8 hover:-translate-y-1 transition-transform">
                 <h3 className="text-lg lg:text-xl font-bold mb-2">Monitoraggio costante</h3>
-                <p className="text-sm text-accent/80">Monitoriamo progressi e obiettivi, muovendoci con agilità in base a esigenze e cambiamenti di mercato.</p>
+                <p className="text-sm text-accent/80">
+                  Non resta che monitorare i progressi e il raggiungimento dei progetti finanziari prefissati.<br /><br />
+                  In modo da muoverci con agilità in base alle esigenze o ai cambiamenti di mercato
+                </p>
               </div>
             </div>
           </div>
@@ -110,33 +121,33 @@ export default function Home() {
               <AlignLeft size={32} />
             </div>
             <h3 className="text-xl font-bold text-accent mb-3">Trasparenza</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Credo che la trasparenza sia alla base di un rapporto di collaborazione di fiducia e duraturo</p>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">La trasparenza è alla base di un rapporto di fiducia e duraturo.</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <PenLine size={32} />
             </div>
             <h3 className="text-xl font-bold text-accent mb-3">Personalizzazione</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ogni persona ha esigenze ed obiettivi differenti, per questo la personalizzazione è di estrema importanza</p>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ogni persona ha esigenze e obiettivi differenti.</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <Wallet size={32} />
             </div>
-            <h3 className="text-xl font-bold text-accent mb-3">Zero conflitti d'interesse</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Ho la possibilità di poter scegliere qualsiasi strumento esistente sul mercato, per questo non sono incentivato a dover utilizzare degli strumenti specifici rispetto ad altri</p>
+            <h3 className="text-xl font-bold text-accent mb-3">Zero conflitti</h3>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Posso scegliere ogni strumento sul mercato senza incentivi.</p>
           </div>
           <div className="flex flex-col items-center h-full">
             <div className="bg-blue-600 text-white p-5 rounded-full mb-6 shadow-[0_8px_20px_rgba(37,99,235,0.4)]">
               <Eye size={32} />
             </div>
-            <h3 className="text-xl font-bold text-accent mb-3">Aggiornamento continuo</h3>
-            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Il monitoraggio della situazione dei miei clienti e l'aggiornamento delle mie competenze sta alla base di un'attività altamente consulenziale</p>
+            <h3 className="text-xl font-bold text-accent mb-3">Aggiornamento</h3>
+            <p className="text-accent/70 text-sm leading-relaxed mt-auto">Monitoraggio costante e competenze sempre aggiornate.</p>
           </div>
         </div>
 
-        <button className="btn-primary relative z-10 px-14 py-4 text-lg shadow-[0_10px_30px_rgba(0,68,255,0.4)] hover:shadow-[0_15px_40px_rgba(0,68,255,0.6)] hover:-translate-y-1 bg-blue-600 text-white rounded-full font-bold">
-          Chi Sono?
+        <button className="btn-primary relative z-10 px-14 py-4 text-lg shadow-[0_10px_30px_rgba(0,68,255,0.4)] hover:shadow-[0_15px_40px_rgba(0,68,255,0.6)] hover:-translate-y-1">
+          Chi Sono
         </button>
 
         {/* Wave Divider to Mission */}
