@@ -73,8 +73,10 @@ export default function SiteFooter() {
           <Link href="/disclaimer" className="hover:text-white transition-colors">Disclaimer</Link>
         </div>
       </div>
-      <div className="text-center mt-12 text-[10px] sm:text-xs text-blue-200/40 tracking-wider">
-        DOCUMENTO DI MARKETING CON FINALITÀ PROMOZIONALI, REDATTO DA AMINE ALAHIYANE DA CONSIDERARSI COME COMUNICAZIONE COMMERCIALE.
+      <div className="text-center mt-12 text-[10px] sm:text-xs text-blue-200/40 tracking-wider space-y-1">
+        <p>Strada vecchia di san giovanni 129, 10062 Luserna San Giovanni (TO), Email: segreteria@investimentiamine.it</p>
+        <p>Pec: aminealahiyane@pec.it, P. IVA 12679780010</p>
+        <p>Copyright &copy; 2026 Amine Alahiyane</p>
       </div>
     </footer>
   );
